@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-import Message from './Components/Message';
+import Message from './Components/Atoms/Message';
+import Input from './Components/Atoms/Input';
 
 const socket = io('http://localhost:5000');
 
@@ -36,6 +37,7 @@ function App() {
         />
         <button onClick={sendMessage}>Send</button>
       </div>
+      <Input value="email" />
     </div>
   );
 }
