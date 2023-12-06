@@ -5,6 +5,8 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 import DeleteIcon from '@mui/icons-material/Delete';
 import VisibilityIcon from '@mui/icons-material/Visibility';
+import LogoutIcon from '@mui/icons-material/Logout';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import './Icon.css'
 // Importez toutes les icônes nécessaires
 
@@ -29,6 +31,12 @@ const Icon = ({ value }) => {
             break; 
         case 'VisibilityIcon':
             valueToDisplay = <VisibilityIcon />;
+            break;
+        case 'LogoutIcon':
+            valueToDisplay = <LogoutIcon />;
+            break;
+        case 'ArrowBackIosIcon':
+            valueToDisplay = <ArrowBackIosIcon />;
             break;
       
         default:
