@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-// import Message from './Components/Atoms/Message';
 
-// const socket = io('http://localhost:5000');
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./Components/Pages/Home"
 import ChatPage from "./Components/Pages/ChatPage";
