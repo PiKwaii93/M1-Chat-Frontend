@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-import Message from './Components/Atoms/Message';
+// import Message from './Components/Atoms/Message';
 
 // const socket = io('http://localhost:5000');
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -28,11 +28,11 @@ function App() {
   return (
     <div className="App">
       <h1>Real-Time Chat App</h1>
-      <div className="messages">
+      {/* <div className="messages">
         {messages.map((message, index) => (
           <Message key={index} username={message.username} text={message.text} />
         ))}
-      </div>
+      </div> */}
       <div className="input-box">
         <input
           type="text"
@@ -50,7 +50,7 @@ function App() {
             <Route path="/chat" element={<ChatPage socket={socket} />}></Route>
           </Routes>
         </div>
-      </BrowserRouter>
+      </BrowserRouter>  
 
     </div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Avatar from './Atoms/Avatar/Avatar';
-import Icon from './Atoms/Icon';
+import CurrentUser from './Molecules/CurrentUser/CurrentUser';
+import Navigation from './Molecules/Navigation/Navigation';
 import Search from './Atoms/Search/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,15 +16,10 @@ const ChatBar = ({ socket }) => {
 
     return (
         <div className='chat__sidebar'>
-            <div className='flex gap-3 ai-center'>
-                <Avatar size='medium' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} name='username' />
-                <h2 className='title'>{username}</h2>
-            </div>
 
-            <div className='w-100'>
-                <Icon value="SmsIcon" />
-                <Icon value="SearchIcon" />
-            </div>
+            <CurrentUser username={username} />
+
+            <Navigation />
 
             <h2>Open Chat</h2>
             <div>

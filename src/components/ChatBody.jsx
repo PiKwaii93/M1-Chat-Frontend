@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import Avatar from './Atoms/Avatar/Avatar';
 import State from './Atoms/State';
+import UserTop from './Molecules/UserTop/UserTop';
 
 const ChatBody = ({ messages, typingStatus, lastMessageRef }) => {
   const navigate = useNavigate()
@@ -18,16 +19,7 @@ const ChatBody = ({ messages, typingStatus, lastMessageRef }) => {
 
   return (
     <>
-      <header className='chat__mainHeader gap-3'>
-        <Avatar size='small' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} />
-        <div className='gap-1'>
-          <p className='title'>{username}</p>
-          <State value={true} />
-        </div>
-
-        {/* <button className='leaveChat__btn' onClick={handleLeaveChat}>LEAVE CHAT</button> */}
-      </header>
-
+      <UserTop username={username} isConnected={isConnected} />
 
       <div className='message__container'>
         {messages.map(message => (
