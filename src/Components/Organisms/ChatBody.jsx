@@ -1,8 +1,11 @@
-import React from 'react'
-import {useNavigate} from "react-router-dom"
+<<<<<<< HEAD
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 import UserTop from '../Molecules/UserTop/UserTop';
+=======
+import React from 'react'
+import {useNavigate} from "react-router-dom"
+>>>>>>> 3358ef88af6189cef085969150b1d616da4afde9
 
 const ChatBody = ({messages, typingStatus, lastMessageRef}) => { 
   const navigate = useNavigate()
