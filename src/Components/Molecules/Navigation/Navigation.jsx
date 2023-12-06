@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../../Atoms/Icon';
+import Icon from '../../Atoms/Icon/Icon';
 import "./Navigation.css";
 
 function Navigation() {
