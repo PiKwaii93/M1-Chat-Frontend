@@ -1,0 +1,33 @@
+.avatar {
+    display: flex;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar--large {
+    width: 90px;
+    height: 90px;
+}
+
+.avatar--medium {
+    width: 70px;
+    height: 70px;
+}
+
+.avatar--small {
+    width: 55px;
+    height: 55px;
+}
+
+.avatar--connected::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    background: #008000;
+    z-index: 2;
+}

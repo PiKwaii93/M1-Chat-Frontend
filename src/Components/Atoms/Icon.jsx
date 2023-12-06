@@ -1,17 +1,33 @@
 import '@mui/styled-engine'
-import Icon1 from '@mui/icons-material/Home';
-import Icon2 from '@mui/icons-material/Send';
+import SendIcon from '@mui/icons-material/Send';
+import SmsIcon from '@mui/icons-material/Sms';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import SearchIcon from '@mui/icons-material/Search';
+import DeleteIcon from '@mui/icons-material/Delete';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 // Importez toutes les icônes nécessaires
 
 const Icon = ({ value }) => {
     let valueToDisplay;
 
     switch (value) {
-        case 'icon1':
-            valueToDisplay = <Icon1 />;
+        case 'SendIcon':
+            valueToDisplay = <SendIcon />;
             break;
-        case 'icon2':
-            valueToDisplay = <Icon2 />;
+        case 'SmsIcon':
+            valueToDisplay = <SmsIcon />;
+            break;
+        case 'MoreVertIcon':
+            valueToDisplay = <MoreVertIcon />;
+            break;
+        case 'DeleteIcon':
+            valueToDisplay = <DeleteIcon />;
+            break;
+        case 'SearchIcon':
+            valueToDisplay = <SearchIcon />;
+            break; 
+        case 'VisibilityIcon':
+            valueToDisplay = <VisibilityIcon />;
             break;
       
         default:
