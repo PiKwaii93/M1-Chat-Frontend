@@ -23,13 +23,15 @@ const ChatFooter = ({socket}) => {
         <form className='form' onSubmit={handleSendMessage}>
           <input 
             type="text" 
-            placeholder='Write message' 
+            placeholder='Votre message...' 
             className='message' 
             value={message} 
             onChange={e => setMessage(e.target.value)}
             onKeyDown={handleTyping}
             />
-            <button className="sendBtn">SEND</button>
+            <button className="sendBtn">
+              {/* <Icon value='SendIcon' /> */}
+            </button>
         </form>
      </div>
   )

@@ -1,7 +1,6 @@
 .avatar {
     display: flex;
     border-radius: 100px;
-    overflow: hidden;
     position: relative;
 }
 
@@ -25,8 +24,8 @@
     position: absolute;
     bottom: -2px;
     right: -2px;
-    width: 15px;
-    height: 15px;
+    width: 19px;
+    height: 19px;
     border-radius: 100px;
     background: #008000;
     z-index: 2;

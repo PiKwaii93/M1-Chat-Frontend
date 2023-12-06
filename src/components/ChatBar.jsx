@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Avatar from './Atoms/Avatar/Avatar';
 import Icon from './Atoms/Icon';
 import Search from './Atoms/Search/Search';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ChatBar = ({ socket }) => {
     const [users, setUsers] = useState([])
@@ -11,14 +11,16 @@ const ChatBar = ({ socket }) => {
         socket.on("newUserResponse", data => setUsers(data))
     }, [socket, users])
 
+    const isConnected = true;
+
     return (
         <div className='chat__sidebar'>
-            <div className='flex'>
-                <Avatar size='medium' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected='true' name='username' />
+            <div>
+                <Avatar size='medium' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} name='username' />
                 <h2>username</h2>
             </div>
 
-            <div>
+            <div className='w-100'>
                 <Icon value="SmsIcon" />
                 <Icon value="SearchIcon" />
             </div>
