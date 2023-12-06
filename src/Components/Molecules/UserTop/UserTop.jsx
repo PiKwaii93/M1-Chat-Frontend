@@ -9,7 +9,7 @@ const UserTop = ({ username, isConnected }) => {
             <Avatar size='small' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} />
             <div className='gap-1'>
                 <p className='title'>{username}</p>
-                <State value={true} />
+                <State value="true" />
             </div>
         </header>
     );
