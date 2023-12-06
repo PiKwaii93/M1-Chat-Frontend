@@ -4,8 +4,8 @@ import io from 'socket.io-client';
 
 // const socket = io('http://localhost:5000');
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./components/Home"
-import ChatPage from "./components/ChatPage";
+import Home from "./Components/Pages/Home"
+import ChatPage from "./Components/Pages/ChatPage";
 import socketIO from "socket.io-client"
 import './App.css'
 
