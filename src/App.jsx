@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import Message from './Components/Atoms/Message/Message';
 import Input from './Components/Atoms/Input/Input';
-import Icon from './Components/Atoms/Icon';
+import Icon from './Components/Atoms/Icon/Icon';
 import Image from './Components/Atoms/Image';
 import Avatar from './Components/Atoms/Avatar/Avatar';
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Icon from '../Atoms/Icon';
+import Icon from '../Atoms/Icon/Icon';
 
 const ChatFooter = ({ socket }) => {
   const [message, setMessage] = useState("")

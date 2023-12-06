@@ -3,6 +3,7 @@ import CurrentUser from '../Molecules/CurrentUser/CurrentUser';
 import Navigation from '../Molecules/Navigation/Navigation';
 import Search from '../Atoms/Search/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import UserHistory from '../Molecules/UserHistory/UserHistory';
 
 const ChatBar = ({ socket }) => {
     const [users, setUsers] = useState([])
@@ -28,6 +29,7 @@ const ChatBar = ({ socket }) => {
                 <div className='chat__users'>
                     {users.map(user => <p key={user.socketID}>{user.userName}</p>)}
                 </div>
+                <UserHistory />
             </div>
         </div>
     )
