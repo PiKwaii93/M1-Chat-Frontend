@@ -4,11 +4,11 @@ import Message from './Components/Atoms/Message/Message';
 import Input from './Components/Atoms/Input/Input';
 import Icon from './Components/Atoms/Icon';
 import Image from './Components/Atoms/Image';
-import Avatar from './Components/Atoms/Avatar';
+import Avatar from './Components/Atoms/Avatar/Avatar';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./Components/Home"
-import ChatPage from "./Components/ChatPage";
+import Home from "./Components/Pages/Home"
+import ChatPage from "./Components/Pages/ChatPage";
 
 import socketIO from "socket.io-client"
 import './App.css'
