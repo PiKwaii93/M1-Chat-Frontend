@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-import Message from './Components/Atoms/Message';
-import Input from './Components/Atoms/Input';
+import Message from './Components/Atoms/Message/Message';
+import Input from './Components/Atoms/Input/Input';
 import Icon from './Components/Atoms/Icon';
 import Image from './Components/Atoms/Image';
 import Avatar from './Components/Atoms/Avatar';
 
 // const socket = io('http://localhost:5000');
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./components/Home"
-import ChatPage from "./components/ChatPage";
+import Home from "./Components/Home"
+import ChatPage from "./Components/ChatPage";
 import socketIO from "socket.io-client"
 
 const socket = socketIO.connect("http://localhost:4000")
