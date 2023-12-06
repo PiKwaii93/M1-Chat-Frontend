@@ -1,6 +1,6 @@
 import React from 'react';
 import Avatar from '../../Atoms/Avatar/Avatar';
-import State from '../../Atoms/State/State';
+import State from '../../Atoms/State';
 import "./UserTop.css";
 
 const UserTop = ({ username, isConnected }) => {

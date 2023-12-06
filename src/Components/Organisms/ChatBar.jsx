@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import CurrentUser from './Molecules/CurrentUser/CurrentUser';
-import Navigation from './Molecules/Navigation/Navigation';
-import Search from './Atoms/Search/Search';
+import CurrentUser from '../Molecules/CurrentUser/CurrentUser';
+import Navigation from '../Molecules/Navigation/Navigation';
+import Search from '../Atoms/Search/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ChatBar = ({ socket }) => {
@@ -17,7 +17,7 @@ const ChatBar = ({ socket }) => {
     return (
         <div className='chat__sidebar'>
 
-            <CurrentUser username={username} />
+            <CurrentUser username={username} isConnected={isConnected} />
 
             <Navigation />
 

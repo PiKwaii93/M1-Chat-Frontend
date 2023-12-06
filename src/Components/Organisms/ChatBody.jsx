@@ -1,8 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import Avatar from './Atoms/Avatar/Avatar';
-import State from './Atoms/State';
-import UserTop from './Molecules/UserTop/UserTop';
+import UserTop from '../Molecules/UserTop/UserTop';
 
 const ChatBody = ({ messages, typingStatus, lastMessageRef }) => {
   const navigate = useNavigate()
