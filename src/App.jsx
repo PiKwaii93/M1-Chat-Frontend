@@ -6,11 +6,12 @@ import Icon from './Components/Atoms/Icon';
 import Image from './Components/Atoms/Image';
 import Avatar from './Components/Atoms/Avatar';
 
-// const socket = io('http://localhost:5000');
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./Components/Home"
 import ChatPage from "./Components/ChatPage";
+
 import socketIO from "socket.io-client"
+import './App.css'
 
 const socket = socketIO.connect("http://localhost:4000")
 function App() {
@@ -28,16 +29,14 @@ function App() {
     setMessageText('');
   };
 
-  let isConnected = false;
-
   return (
     <div className="App">
       <h1>Real-Time Chat App</h1>
-      <div className="messages">
+      {/* <div className="messages">
         {messages.map((message, index) => (
           <Message key={index} username={message.username} text={message.text} />
         ))}
-      </div>
+      </div> */}
       <div className="input-box">
         <input
           type="text"
@@ -47,10 +46,6 @@ function App() {
         />
         <button onClick={sendMessage}>Send</button>
       </div>
-      <Input value="email" />
-      <Icon value="icon1" />
-      <Avatar connected={isConnected} size='medium' url='' />
-      <Image url="https://cdn-icons-png.flaticon.com/256/25/25231.png" alt="Image test" />
 
       <BrowserRouter>
         <div>
@@ -59,7 +54,7 @@ function App() {
             <Route path="/chat" element={<ChatPage socket={socket} />}></Route>
           </Routes>
         </div>
-      </BrowserRouter>
+      </BrowserRouter>  
 
     </div>
 

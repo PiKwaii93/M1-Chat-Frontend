@@ -1,9 +1,9 @@
 const State = ({ value }) => {
+
+    const isActif = value ? 'Actif' : 'Inactif'
         
     return (
-        <div className={`avatar avatar--${size}`}>
-            <img src={value} alt={name} />
-        </div>
+        <p className="state">{isActif}</p>
     );
 };
 
