@@ -99,8 +99,7 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  padding: 20px;
+  padding: 10px 30px;
   background-color: #FFFFFF;
 }
 
@@ -148,17 +147,12 @@
 }
 
 .sendBtn {
-  width: 150px;
-  background-color: green;
+  background: none;
   padding: 10px;
   border: none;
   outline: none;
-  color: #eae3d2;
+  color: #2253D1;
   cursor: pointer;
-}
-
-.sendBtn:hover {
-  background-color: rgb(129, 201, 129);
 }
 
 .message__recipient {
@@ -191,4 +185,22 @@
   bottom: 50px;
   font-size: 13px;
   font-style: italic;
+}
+
+.title {
+  color: #464646;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.state {
+  color: #9E9E9E;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

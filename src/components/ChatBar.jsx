@@ -12,12 +12,13 @@ const ChatBar = ({ socket }) => {
     }, [socket, users])
 
     const isConnected = true;
+    const username = 'Gérard MANVUSSA';
 
     return (
         <div className='chat__sidebar'>
-            <div>
+            <div className='flex gap-3 ai-center'>
                 <Avatar size='medium' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} name='username' />
-                <h2>username</h2>
+                <h2 className='title'>{username}</h2>
             </div>
 
             <div className='w-100'>
