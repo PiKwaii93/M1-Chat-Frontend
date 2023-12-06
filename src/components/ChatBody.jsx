@@ -14,20 +14,18 @@ const ChatBody = ({ messages, typingStatus, lastMessageRef }) => {
   }
 
   const isConnected = true;
+  const username = 'Gérard MANVUSSA';
 
   return (
     <>
-      <header className='chat__mainHeader'>
-        <div>
-          <Avatar size='small' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} />
-          <div>
-            <p>username</p>
-            <State value={true} />
-          </div>
-
+      <header className='chat__mainHeader gap-3'>
+        <Avatar size='small' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} />
+        <div className='gap-1'>
+          <p className='title'>{username}</p>
+          <State value={true} />
         </div>
 
-        <button className='leaveChat__btn' onClick={handleLeaveChat}>LEAVE CHAT</button>
+        {/* <button className='leaveChat__btn' onClick={handleLeaveChat}>LEAVE CHAT</button> */}
       </header>
 
 

@@ -48,6 +48,23 @@
   align-items: center;
 }
 
+.chat p {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
 .chat__sidebar {
   height: 100%;
   flex: 0 0 28%;
@@ -58,7 +75,7 @@
 
 .chat__main {
   height: 100%;
-  flex: 0.8;
+  flex: 1;
 }
 
 .chat__header {
@@ -82,7 +99,7 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 20px;
   background-color: #FFFFFF;
 }
