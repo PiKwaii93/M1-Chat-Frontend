@@ -22,14 +22,12 @@ const ChatBar = ({ socket }) => {
 
             <Navigation />
 
-            <h2>Open Chat</h2>
             <div>
                 <Search />
-                <h4 className='chat__header'>ACTIVE USERS</h4>
                 <div className='chat__users'>
                     {users.map(user => <p key={user.socketID}>{user.userName}</p>)}
                 </div>
-                <UserHistory />
+                <UserHistory username={username} isConnected={isConnected} />
             </div>
         </div>
     )
