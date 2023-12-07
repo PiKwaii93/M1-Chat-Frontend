@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import Text from '../../Atoms/Text/Text';
+import Icon from '../../Atoms/Icon/Icon';
 import Button from 'react-bootstrap/Button';
 import Overlay from 'react-bootstrap/Overlay';
 import './Tooltip.css';
@@ -20,13 +21,13 @@ function Tooltip() {
   return (
     <div className="tooltip-container" >
       <Button ref={target} onClick={() => setShow(!show)}>
-        Ajouter un icon
+        <Icon value='MoreVertIcon' />
       </Button>
       <Overlay target={target.current} show={show} placement="right">
-          <div className='tooltip'>
-          <Text text="Supprimer + Icon" type="small" propriety="red"/>
-          </div>
-      
+        <div className='tooltip'>
+          <Text text="Supprimer" type="small" propriety="red" />
+          <Icon value='DeleteIcon' />
+        </div>
       </Overlay>
     </div>
   );

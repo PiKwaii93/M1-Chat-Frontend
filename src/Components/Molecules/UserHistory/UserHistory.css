@@ -9,3 +9,7 @@
 .ai-center {
     align-items: center;
 }
+
+.jc-sbetween {
+    justify-content: space-between;
+}

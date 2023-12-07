@@ -5,8 +5,8 @@
 }
 
 .avatar--large {
-    width: 90px;
-    height: 90px;
+    width: 125px;
+    height: 125px;
 }
 
 .avatar--medium {
@@ -29,4 +29,9 @@
     border-radius: 100px;
     background: #008000;
     z-index: 2;
+}
+
+.avatar--large::after {
+    width: 28px;
+    height: 28px;
 }

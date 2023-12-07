@@ -7,6 +7,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 import './Icon.css'
 // Importez toutes les icônes nécessaires
 
@@ -37,6 +38,9 @@ const Icon = ({ value }) => {
             break;
         case 'ArrowBackIosIcon':
             valueToDisplay = <ArrowBackIosIcon />;
+            break;
+        case 'AddCircleIcon':
+            valueToDisplay = <AddCircleIcon />;
             break;
       
         default:
