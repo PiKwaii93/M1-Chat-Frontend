@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import CurrentUser from '../Molecules/CurrentUser/CurrentUser';
 import Navigation from '../Molecules/Navigation/Navigation';
+import UserHistory from '../Molecules/UserHistory/UserHistory';
+import UserAdd from '../Molecules/UserAdd/UserAdd';
 import Search from '../Atoms/Search/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import UserHistory from '../Molecules/UserHistory/UserHistory';
+import ChatMessage from '../Molecules/ChatMessage/ChatMessage';
+
 
 const ChatBar = ({ socket }) => {
     const [users, setUsers] = useState([])
@@ -28,7 +31,11 @@ const ChatBar = ({ socket }) => {
                     {users.map(user => <p key={user.socketID}>{user.userName}</p>)}
                 </div>
                 <UserHistory username={username} isConnected={isConnected} />
+                <UserAdd username={username} isConnected={isConnected} />
             </div>
+
+            <ChatMessage user={username} message="Hello World !" isCurrent={false}/>
+
         </div>
     )
 }
