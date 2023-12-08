@@ -9,7 +9,7 @@ const UserTitle = ({ username, isConnected }) => {
             <Avatar size='large' url='https://cdn-icons-png.flaticon.com/256/25/25231.png' connected={isConnected} />
             <div className='flex flex-column gap-2'>
                 <Text type='medium' propriety='bold' text={username} />
-                <label for="avatar">Choisir une photo</label>
+                <label htmlFor="avatar">Choisir une photo</label>
                 <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" hidden />
             </div>
         </div>
