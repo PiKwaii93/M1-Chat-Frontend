@@ -5,11 +5,13 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchIcon from '@mui/icons-material/Search';
 import DeleteIcon from '@mui/icons-material/Delete';
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import ArrowBackIosRoundedIcon from '@mui/icons-material/ArrowBackIosRounded';
-import PowerSettingsNewRoundedIcon from '@mui/icons-material/PowerSettingsNewRounded';
+import LogoutIcon from '@mui/icons-material/Logout';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import './Icon.css'
 // Importez toutes les icônes nécessaires
 
-const Icon = ({ value, size }) => {
+const Icon = ({ value }) => {
     let valueToDisplay;
 
     switch (value) {
@@ -31,11 +33,14 @@ const Icon = ({ value, size }) => {
         case 'VisibilityIcon':
             valueToDisplay = <VisibilityIcon />;
             break;
-        case 'ArrowBackIosIcon':
-            valueToDisplay = <ArrowBackIosRoundedIcon style={{ fontSize: size }}/>;
-            break;
         case 'LogoutIcon':
-            valueToDisplay = <PowerSettingsNewRoundedIcon style={{ fontSize: size }}/>;
+            valueToDisplay = <LogoutIcon />;
+            break;
+        case 'ArrowBackIosIcon':
+            valueToDisplay = <ArrowBackIosIcon />;
+            break;
+        case 'AddCircleIcon':
+            valueToDisplay = <AddCircleIcon />;
             break;
       
         default:
