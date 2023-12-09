@@ -12,7 +12,11 @@
 .small__dark {
   color: #464646;
 }
-.small__red {
+.small__red-error {
+  color: #FE3A3A;
+}
+
+.small__red-button {
   color: #FE3A3A;
   cursor: pointer;
 }
@@ -27,8 +31,7 @@
 .medium__semi-bold {
   font-weight: 600;
 }
-.medium__bold,
-.medium-bold {
+.medium__bold {
   font-weight: 700;
 }
 
