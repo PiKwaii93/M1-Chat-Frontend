@@ -7,6 +7,9 @@ import ChatMessage from '../Molecules/ChatMessage/ChatMessage';
 import UserTitle from '../Molecules/UserTitle/UserTitle';
 import Search from '../Atoms/Search/Search';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ParamSidebar from './ParamSidebar/ParamSidebar';
+import ButtonSidebar from './ParamSidebar/ButtonSidebar';
+import { SidebarProvider } from './ParamSidebar/ParamSidebarContext';
 
 
 
@@ -26,6 +29,7 @@ const ChatBar = ({ socket }) => {
 
 
     return (
+        <>
         <div className='chat__sidebar'>
 
             <CurrentUser username={user.username} isConnected={user.isConnected} />
@@ -46,6 +50,13 @@ const ChatBar = ({ socket }) => {
             <UserTitle username={user.username} isConnected={user.isConnected} />
 
         </div>
+
+        
+        <SidebarProvider>
+            <ButtonSidebar />
+            <ParamSidebar />
+        </SidebarProvider>
+    </>
     )
 }
 
